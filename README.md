@@ -1,9 +1,9 @@
-Based on http://fullcalendar.io/ v2.1.1 -  JQuery plugin packaged for Meteor 1.0.
+Based on http://fullcalendar.io/ v2.1.1 -  JQuery plugin packaged for Meteor 1.0. Without styles (no CSS).
 
 ### Instalation ###
 
 ```bash
-    meteor add gquemart:meteor-reactive-fullcalendar
+    meteor add fermuch:meteor-reactive-fullcalendar-unstyled
 ```
 
 ### Usage ###

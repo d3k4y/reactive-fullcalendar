@@ -1,7 +1,8 @@
 Package.describe({
   summary: "Meteor Reactive - Full-sized drag & drop event calendar (jQuery plugin - v2.1.1) [unstyled]",
   version: "1.0.0",
-  git: "https://github.com/fermuch/meteor-reactive-fullcalendar-unstyled.git"
+  git: "https://github.com/fermuch/meteor-reactive-fullcalendar-unstyled.git",
+  name: 'fermuch:meteor-reactive-fullcalendar-unstyled'
 });
 
 Package.onUse(function(api) {

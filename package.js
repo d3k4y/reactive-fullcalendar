@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Meteor Reactive - Full-sized drag & drop event calendar",
-  version: "2.3.2",
+  version: "2.4.0",
   git: "https://github.com/koretech/meteor-reactive-fullcalendar.git",
   name: 'krt:meteor-reactive-fullcalendar'
 });

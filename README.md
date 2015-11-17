@@ -1,9 +1,9 @@
-Based on http://fullcalendar.io/ v2.3.1 -  JQuery plugin packaged for Meteor 1.0.
+Based on http://fullcalendar.io/ v2.4.0 -  JQuery plugin packaged for Meteor 1.0.
 
-### Instalation ###
+### Installation ###
 
 ```bash
-    meteor add fermuch:meteor-reactive-fullcalendar
+    meteor add krt:meteor-reactive-fullcalendar
 ```
 
 ### Usage ###
@@ -68,3 +68,15 @@ Client JS:
 ### More details ###
 - Many fullcalendar can be added on the same page by using different id
 - autoruns need to be an array of functions
+
+### Demo ###
+
+- You can see a demo of this package in action at this repository:
+https://github.com/koretech/meteor-fullcalendar-demo
+
+### History ###
+
+- This package was originally written by gquemart and is available at:
+https://github.com/gquemart/meteor-reactive-fullcalendar
+- It was later forked by fermuch and is available at:
+https://github.com/fermuch/meteor-reactive-fullcalendar

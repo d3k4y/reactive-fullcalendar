@@ -3,11 +3,11 @@ ReactiveFullcalendar = function (options) {
         throw new SyntaxError("Need events options declaring a function to manage reactive data");
     }
 
-	var calendar = document.createElement('div');
-    (!options.id)? calendar.id = "fullCalendar" : calendar.id = options.id;
-    (!options.addedClasses)? calendar.className = "calendar" : calendar.className = "calendar " + options.addedClasses;
-	$("#" + calendar.id + "_wrapper").append(calendar);
-	this.calendar = $(calendar).fullCalendar(options);
+    var calendar = document.createElement('div');
+    calendar.id = !options.id ? "fullCalendar" : options.id;
+    calendar.className = !options.addedClasses ? "calendar" : "calendar " + options.addedClasses;
+    $("#" + calendar.id + "_wrapper").append(calendar);
+    this.calendar = $(calendar).fullCalendar(options);
 
     this.autorunFunctions = function() {
         if (options.autoruns) {

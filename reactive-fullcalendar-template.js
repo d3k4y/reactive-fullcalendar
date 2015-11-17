@@ -1,11 +1,11 @@
-Template.ReactiveFullcalendar.rendered = function () {
-	var data = this.data;
+Template.ReactiveFullcalendar.onRendered(function() {
+    var data = this.data;
     var calendar = new ReactiveFullcalendar(data.options);
     this.autorun(function(){
         calendar.update();
         calendar.autorunFunctions();
     });
-};
+});
 
 Template.ReactiveFullcalendar.helpers({
     id: function () {

@@ -8,7 +8,7 @@ https://github.com/fullcalendar/fullcalendar/releases
 ### Installation ###
 
 ```bash
-    meteor add supaseca:meteor-reactive-fullcalendar
+    meteor add supaseca:reactive-fullcalendar
 ```
 
 ### Usage ###

@@ -1,7 +1,7 @@
 Package.describe({
-    summary: "Meteor Reactive Fullcalendar - Full-sized drag & drop event calendar",
+    summary: "Reactive Fullcalendar version 3.0.1 - Full-sized drag & drop event calendar",
     version: '3.0.1',
-    git: "https://github.com/projik/meteor-reactive-fullcalendar.git",
+    git: "https://github.com/projik/reactive-fullcalendar.git",
     name: 'supaseca:reactive-fullcalendar'
 });
 

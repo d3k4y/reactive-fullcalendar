@@ -1,9 +1,14 @@
-Based on http://fullcalendar.io/ v2.4.0 -  JQuery plugin packaged for Meteor 1.0.
+Based on http://fullcalendar.io/ v3.0.1 -  JQuery plugin packaged for Meteor 1.0.
+
+Amongst other improvements, version 3 of Fullcalendar includes support for list views of events and drops support for IE 8.
+
+For the complete list of changes in version 3, visit the releases page:
+https://github.com/fullcalendar/fullcalendar/releases
 
 ### Installation ###
 
 ```bash
-    meteor add krt:meteor-reactive-fullcalendar
+    meteor add supaseca:meteor-reactive-fullcalendar
 ```
 
 ### Usage ###
@@ -29,26 +34,14 @@ Client JS:
             lang: 'fr',
             // Function providing events reactive computation for fullcalendar plugin
             events: function(start, end, timezone, callback) {
-                //console.log(start);
-                //console.log(end);
-                //console.log(timezone);
-                var events = [];
-                // Get only events from one document of the Calendars collection
-                // events is a field of the Calendars collection document
-                var calendar = Calendars.findOne(
-                    { "_id":"myCalendarId" },
-                    { "fields": { 'events': 1 } }
-                );
-                // events need to be an array of subDocuments:
-                // each event field named as fullcalendar Event Object property is automatically used by fullcalendar
-                if (calendar && calendar.events) {
-                    calendar.events.forEach(function (event) {
-                        eventDetails = {};
-                        for(key in event)
-                            eventDetails[key] = event[key];
-                        events.push(eventDetails);
-                    });
-                }
+                console.log(start.format(), end.format());
+                // Get events from the CalendarEvents collection
+                // return as an array with .fetch()
+                var events = CalendarEvents.find({
+                     "id"         : "calendar1",
+                     "startValue" : { $gte: start.valueOf() },
+                     "endValue"   : { $lte: end.valueOf() }
+                }).fetch();
                 callback(events);
             },
             // Optional: id of the calendar
@@ -69,10 +62,6 @@ Client JS:
 - Many fullcalendar can be added on the same page by using different id
 - autoruns need to be an array of functions
 
-### Demo ###
-
-- You can see a demo of this package in action at this repository:
-https://github.com/koretech/meteor-fullcalendar-demo
 
 ### History ###
 
@@ -80,3 +69,5 @@ https://github.com/koretech/meteor-fullcalendar-demo
 https://github.com/gquemart/meteor-reactive-fullcalendar
 - It was later forked by fermuch and is available at:
 https://github.com/fermuch/meteor-reactive-fullcalendar
+- And then later forked by koretech:
+https://github.com/koretech/meteor-reactive-fullcalendar

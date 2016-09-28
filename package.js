@@ -18,4 +18,5 @@ Package.onUse(function(api) {
         'reactive-fullcalendar-template.html',
         'reactive-fullcalendar-template.js'
     ], 'client');
+    api.export('ReactiveFullcalendar', 'client');
 });

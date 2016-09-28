@@ -22,4 +22,3 @@ ReactiveFullcalendar.prototype.update = function () {
     this.calendar.fullCalendar('refetchEvents');
 };
 
-export default ReactiveFullcalendar;

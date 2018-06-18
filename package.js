@@ -8,7 +8,7 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('METEOR@1.6.1.1');
     api.use('momentjs:moment@2.15.1', 'client');
-    api.use('templating', 'client');
+    api.use('templating@1.3.2', 'client');
     api.addFiles([
         'fullcalendar.js',
         'fullcalendar.css',

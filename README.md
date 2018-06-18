@@ -8,7 +8,7 @@ https://github.com/fullcalendar/fullcalendar/releases
 ### Installation ###
 
 ```bash
-    meteor add supaseca:reactive-fullcalendar
+    meteor add d3k4y:reactive-fullcalendar
 ```
 
 ### Usage ###
@@ -19,7 +19,7 @@ Template:
         {{ > ReactiveFullcalendar options=calendarOptions }}
     </template>
 ```
-    
+
 Client JS:
 
 ```javascript
@@ -71,3 +71,7 @@ https://github.com/gquemart/meteor-reactive-fullcalendar
 https://github.com/fermuch/meteor-reactive-fullcalendar
 - And then later forked by koretech:
 https://github.com/koretech/meteor-reactive-fullcalendar
+- And then later forked by projik:
+https://github.com/projik/reactive-fullcalendar
+- And then later forked by d3k4y:
+https://github.com/d3k4y/reactive-fullcalendar
